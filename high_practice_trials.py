@@ -3,10 +3,8 @@ from psychopy.constants import *
 import pandas as pd
 import random
 import settings
-from high_utils_eeg import *
-from high_slide_objects_eeg import FixCrossSlide, PauseSlide
+from high_functions import FixCrossSlide, PauseSlide, StimSlide, randomize_letters, create_stim_slide_list, check_answer, update_results
 from show_instructions import show_instructions
-from high_randomize_letters import randomize_letters
 import copy
 import json
 
@@ -22,7 +20,7 @@ json_filename = settings.results_dir_all + 'current_info.json'
 with open(json_filename, 'r') as json_file:
     participant_info = json.load(json_file)
 
-# acess participant info
+# access participant info
 sub_id = participant_info['id']
 sub_language = participant_info['language']
 
@@ -30,9 +28,9 @@ sub_language = participant_info['language']
 # Set the directory for either english or german slides:
 
 if (sub_language == "english") or (sub_language == "English"):
-    resources_dir = settings.resources_dir_high + '/english/'
+    resources_dir = settings.resources_dir_high + 'english/'
 else:
-    resources_dir = settings.resources_dir_high + '/german/'
+    resources_dir = settings.resources_dir_high + 'german/'
 
 # ------------------------------------------------------------------------------------------------------------------
 # Depending on ID: shuffle keys and shuffle target (odd or even)
@@ -85,8 +83,7 @@ my_mouse.setVisible(False)
 
 # Define parallel port
 p_port = None
-
-# -----------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------
 
 # Display instructions
 

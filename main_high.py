@@ -5,7 +5,6 @@ from participant_info import participant_info
 
 main_dir = settings.main_dir
 
-
 sub_id,sub_age,sub_gender,sub_handedness,sub_language,sub_condition,sub_day = participant_info()
 
 # define function that executes scripts: a
@@ -25,7 +24,8 @@ def execute_script(script_path):
 # define function that defines scripts and order of executing and calling execute_script
 def main():
 
-    fatigue_quest = main_dir + 'fatigue_main.py'
+    fatigue_quest = 'C:/Users/esthe/OneDrive/PhD/AR_Duisburg/fatigue-AR/fatigue_questionnaire.py'
+            #main_dir + 'fatigue_questionnaire.py')
 
     high_fatigue_practice = main_dir + 'high_practice_trials.py'
     high_fatigue_main = main_dir + 'high_fatigue_task.py'

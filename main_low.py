@@ -27,7 +27,6 @@ def main():
     low_fatigue_practice = main_dir + 'low_practice_trials.py'
     low_fatigue_main = main_dir + 'low_fatigue_task.py'
 
-
     # Define the sequence of scripts to execute
     script_sequence = [
 

@@ -17,7 +17,6 @@ import settings
 # Objects
 # ----------------------------------------------------------------------------------
 # Stimulus slide
-
 class StimSlide:
 
     def __init__(self, stim_file, stim_type, stim_size, stim_color, stim_trigger, slide_duration, stim_duration, win):

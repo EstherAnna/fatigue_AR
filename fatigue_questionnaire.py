@@ -40,6 +40,7 @@ if settings.save_results:
         # Specify your folder where the CSV files are stored
         csv_folder = settings.results_dir_question
 
+        # check if that file already exists
         if not check_file_existence(csv_folder, file_name):
             break
         else:

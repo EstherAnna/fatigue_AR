@@ -4,8 +4,7 @@ import pandas as pd
 import os
 import json
 
-# Gui and output file
-
+## Gui and output file
 # At experiment start, a gui is displayed, asking for participant's gender, age and id.
 # From this information, a .csv file is created, which will also store results from all experimental trials.
 # This code will also check if the current file (named after the participants id) already exists in the directory

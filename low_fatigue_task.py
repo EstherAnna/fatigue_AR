@@ -173,17 +173,7 @@ stimulus_duration = settings.stim_dur
 for this_block in range(0, len(all_renamed_lists)):
 
     # Block trigger: (151, 152, 153, 154,...)
-    print("block" + str(this_block + 1 + settings.block_trigger))
-
-    if settings.working_in_lab:
-    # Block number trigger
-        print("block " + str(this_block + 1 + settings.block_trigger))
-        p_port.setData(this_block + 1 + settings.block_trigger)
-        core.wait(0.05)
-        p_port.setData(0)
-    else:
-        # Block trigger: (51, 52, 53, 54,...)
-        print("block" + str(this_block + 1 + settings.block_trigger))
+    print("block" + str(this_block + 1))
 
     this_letter_list = all_renamed_lists[this_block].copy()
 

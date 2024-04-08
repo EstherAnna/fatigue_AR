@@ -37,8 +37,7 @@ class StimSlide:
                                           height=self.stim_size,
                                           color=self.stim_color) # for diode test change position: pos=(300,0)
 
-    # Present a stimulus for fixed duration. Accept user input as answer.
-
+    # Present a stimulus for fixed duration. Accept user input as answer:
     def present_slide(self, win, port=None):  # TODO: add "port" as additional input argument
         # Input:
         # - "p_port": parallel port to send trigger for stimulus presentation

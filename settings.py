@@ -26,7 +26,7 @@ full_screen = True
 ## -------- Directories ---------------------------------------------------------------------------------------------
 
 # Main directory containing all scripts:
-main_dir = 'C:/Users/esthe/OneDrive/PhD/AR_Duisburg/fatigue_AR/'
+main_dir = 'C:/Users/esthe/OneDrive/PhD/AR_Duisburg/fatigue-AR/'
 print("main directory", main_dir)
 
 # results dir all (for participant info)
@@ -34,14 +34,18 @@ results_dir_all =main_dir + 'results/'  # folder to store participant's results
 
 # low fatigue task
 resources_dir_low = main_dir + 'resources/low_resources/' # folder with instructions and fix cross png
-results_dir_low =main_dir + 'results/low_results/'  # folder to store participant's results
+results_dir_low =main_dir + 'results/'  # folder to store participant's results
 
 # high fatigue task
 resources_dir_high = main_dir + 'resources/high_resources/' # folder with instructions and fix cross png
-results_dir_high =main_dir + 'results/high_results/'  # folder to store participant's results
+results_dir_high =main_dir + 'results/'  # folder to store participant's results
+
+# fatigue questionnaire
+resources_dir_fatigue =main_dir + 'resources/fatigue_scale_resources/'  # folder to store participant's results
+
 
 # questionnaires results
-results_dir_question = main_dir + 'results/quest_results/'
+results_dir_question = main_dir + 'results/'
 
 #------- Stim settings that are both for low and high fatigue task-------------------------------------------------
 
@@ -50,8 +54,10 @@ face_slide_dur = 1.2  # duration of face slide (in s)
 stim_dur = 1.2  # duration, within "face_slide_dir" to present face stimulus
 fix_cross_dur = 0.5  # duration of avergae fixation cross duration
 fix_size = 100
+fix_trigger = 100,
 ITI_var = 0.15 # variation of fixation cross duration
 pause_slide_dur = 30 # TODO: change to 30!
+pause_slide_trigger = 10
 face_size = 120 # None = default
 target_stim_size = 0.1
 

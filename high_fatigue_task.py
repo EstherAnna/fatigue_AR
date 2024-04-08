@@ -9,7 +9,7 @@ from show_instructions import show_instructions
 import json
 
 # -----------------------------------------------------------------------------------------------------------------
-# Preliminary steps a
+# Preliminary steps
 
 screen_width = settings.screen_width
 screen_height = settings.screen_height

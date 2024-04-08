@@ -3,10 +3,8 @@ from psychopy.constants import *
 import pandas as pd
 import random
 import settings
-from low_utils_eeg import *
-from low_slide_objects_eeg import FixCrossSlide, PauseSlide
+from low_functions import FixCrossSlide, PauseSlide, StimSlide, randomize_letters, create_stim_slide_list, check_answer, update_results
 from show_instructions import show_instructions
-from low_randomize_letters import randomize_letters
 import copy
 import json
 
